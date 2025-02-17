@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
     margin: 0;
@@ -32,6 +32,10 @@ nav {
 nav ul li {
     color: #1d1d24;
     margin: 20px;
+}
+
+nav ul li a {
+    position: relative;
 }
 
 nav ul li a:after {
@@ -79,6 +83,7 @@ nav ul li a:after {
             #1c99fe 20.69%,
             #7644ff 50.19%,
             #fd4766 79.69%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
