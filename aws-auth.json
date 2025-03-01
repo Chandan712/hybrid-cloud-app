@@ -1,0 +1,9 @@
+{
+    "mapUsers": [
+        {
+            "userarn": "arn:aws:iam::412381735865:user/hybrid-cloud-app",
+            "username": "hybrid-cloud-app",
+            "groups": ["system:masters"]
+        }
+    ]
+}

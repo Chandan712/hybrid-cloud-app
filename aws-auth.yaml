@@ -4,13 +4,14 @@ metadata:
   name: aws-auth
   namespace: kube-system
 data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::412381735865:role/AmazonEKSWorkerNodeRole
+      username: system:node:{{EC2PrivateDNSName}}
+      groups:
+        - system:bootstrappers
+        - system:nodes
   mapUsers: |
     - userarn: arn:aws:iam::412381735865:user/hybrid-cloud-app
-      username: hybrid-cloud-app
-      groups:
-        - system:masters
-  mapRoles: |
-    - rolearn: arn:aws:iam::412381735865:role/hybrid-cloud-app
       username: hybrid-cloud-app
       groups:
         - system:masters
